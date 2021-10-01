@@ -2,9 +2,10 @@ package com.reactive.spring.boot;
 
 import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-public class FluxandMonoTest {
+public class FluxTest {
 
     @Test
     public void fluxTest1() {
@@ -79,5 +80,7 @@ public class FluxandMonoTest {
                 .expectNextCount(3)
                 .verifyComplete();
     }
+
+
 
 }
